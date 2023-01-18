@@ -9,9 +9,11 @@ import Foundation
 
 struct JsonDecoder
 {
-    static func decodeLocalJsonFile<T:Decodable>(fileName: String) -> [T]? {
-        let jsonFile = Bundle.main.path(forResource:fileName, ofType: "json")
-        let responseData = try! Data(contentsOf: URL(fileURLWithPath: jsonFile!), options: .alwaysMapped)
-        return try! JSONDecoder().decode([T].self, from: responseData)
+    static func decodeLocalJsonFile<T:Decodable>(fileName: String, responseModel:T.Type) -> [T]? {
+        
+        if  let jsonFile = Bundle.main.path(forResource:fileName, ofType: "json"), let responseData = try? Data(contentsOf: URL(fileURLWithPath: jsonFile), options: .alwaysMapped) {
+            return try? JSONDecoder().decode([T].self, from: responseData)
+        }
+        return nil
     }
 }

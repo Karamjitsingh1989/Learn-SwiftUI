@@ -13,6 +13,9 @@
 		850BCF6D2977BB40009AFF53 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 850BCF6C2977BB40009AFF53 /* Preview Assets.xcassets */; };
 		850BCF752977BC23009AFF53 /* ChartoonCharacters.json in Resources */ = {isa = PBXBuildFile; fileRef = 850BCF742977BC23009AFF53 /* ChartoonCharacters.json */; };
 		850BCF7A2977D44D009AFF53 /* JsonDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BCF792977D44D009AFF53 /* JsonDecoder.swift */; };
+		850BCF7C2977DF98009AFF53 /* CharacterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BCF7B2977DF98009AFF53 /* CharacterModel.swift */; };
+		850BCF7E2977E77F009AFF53 /* CharacterRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BCF7D2977E77F009AFF53 /* CharacterRow.swift */; };
+		850BCF802977E978009AFF53 /* CharacterDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 850BCF7F2977E978009AFF53 /* CharacterDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +26,9 @@
 		850BCF6C2977BB40009AFF53 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		850BCF742977BC23009AFF53 /* ChartoonCharacters.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = ChartoonCharacters.json; sourceTree = "<group>"; };
 		850BCF792977D44D009AFF53 /* JsonDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonDecoder.swift; sourceTree = "<group>"; };
+		850BCF7B2977DF98009AFF53 /* CharacterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterModel.swift; sourceTree = "<group>"; };
+		850BCF7D2977E77F009AFF53 /* CharacterRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRow.swift; sourceTree = "<group>"; };
+		850BCF7F2977E978009AFF53 /* CharacterDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +92,8 @@
 		850BCF762977D38B009AFF53 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				850BCF7D2977E77F009AFF53 /* CharacterRow.swift */,
+				850BCF7F2977E978009AFF53 /* CharacterDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -93,6 +101,7 @@
 		850BCF772977D3DA009AFF53 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				850BCF7B2977DF98009AFF53 /* CharacterModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -176,7 +185,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				850BCF7E2977E77F009AFF53 /* CharacterRow.swift in Sources */,
 				850BCF682977BB3F009AFF53 /* ContentView.swift in Sources */,
+				850BCF7C2977DF98009AFF53 /* CharacterModel.swift in Sources */,
+				850BCF802977E978009AFF53 /* CharacterDetailView.swift in Sources */,
 				850BCF662977BB3F009AFF53 /* ListViewApp.swift in Sources */,
 				850BCF7A2977D44D009AFF53 /* JsonDecoder.swift in Sources */,
 			);
@@ -307,14 +319,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ListView/Preview Content\"";
-				DEVELOPMENT_TEAM = 853676N3N3;
+				DEVELOPMENT_TEAM = UJ386449HU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sonic Characters";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -336,14 +350,16 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"ListView/Preview Content\"";
-				DEVELOPMENT_TEAM = 853676N3N3;
+				DEVELOPMENT_TEAM = UJ386449HU;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Sonic Characters";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.entertainment";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
