@@ -1,1 +1,1 @@
-# Learn-SwiftUI
+# This repo covered common swiftUI topics
